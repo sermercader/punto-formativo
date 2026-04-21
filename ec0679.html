@@ -25,11 +25,12 @@
        BASE — idéntico al landing
     ══════════════════════════════════════ */
     *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth;overflow-x:hidden}
     body{
       font-family:'Montserrat',sans-serif;
       background:#F4F7F9 !important;
       color:#002B49;
+      overflow-x:hidden;
     }
     h1,h2,h3,h4{font-family:'Lexend',sans-serif}
     a{text-decoration:none;color:inherit}
@@ -194,53 +195,32 @@
     .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.4rem}
 
     .hero-chips{
-      display:flex;flex-wrap:wrap;gap:.65rem;
+      display:flex;flex-wrap:wrap;gap:.75rem;
+      color:#4b5563;font-size:.8rem;margin-bottom:1.4rem;
     }
     .chip{
-      display:inline-flex;align-items:center;gap:.4rem;
-      background:#F4F7F9 !important;
-      border:1.5px solid #d9e1e7;
-      border-radius:999px;
-      padding:6px 14px;
-      font-size:.78rem;font-weight:600;color:#002B49;
+      display:flex;align-items:center;gap:.4rem;
     }
     .chip .dot{
-      width:8px;height:8px;border-radius:50%;
-      background:#00f07c !important;flex-shrink:0;
+      width:18px;height:18px;border-radius:50%;
+      background:#00f07c !important;color:#002B49;
+      display:flex;align-items:center;justify-content:center;
+      font-size:.65rem;font-weight:700;flex-shrink:0;
     }
 
-    /* Panel lateral del hero */
+    /* Imagen lateral del hero */
     .hero-panel{
-      background:#F4F7F9 !important;
-      border:2px solid #002B49;
-      border-radius:1.5rem;
-      padding:2rem;
-      display:flex;flex-direction:column;gap:1.25rem;
+      border-radius:.5rem;
+      overflow:hidden;
+
+  
+      align-self:anchor-center;
     }
-    .hero-panel-title{
-      font-family:'Lexend',sans-serif;font-weight:800;
-      font-size:1.1rem;color:#002B49;
-      margin-bottom:.25rem;
+    .hero-panel img{
+      width:100%;height:100%;
+      object-fit:cover;
+      display:block;
     }
-    .panel-row{
-      display:flex;justify-content:space-between;align-items:center;
-      padding:.75rem 0;border-bottom:1px solid #e5e7eb;
-      font-size:.88rem;
-    }
-    .panel-row:last-of-type{border-bottom:none}
-    .panel-label{color:#4b5563;font-weight:500}
-    .panel-value{font-weight:700;color:#002B49;text-align:right}
-    .panel-precio{
-      background:#002B49 !important;
-      border-radius:1rem;padding:1.25rem;
-      text-align:center;
-    }
-    .panel-precio .monto{
-      font-family:'Lexend',sans-serif;font-size:2rem;font-weight:800;
-      color:#00f07c;line-height:1;margin-bottom:.25rem;
-    }
-    .panel-precio .nota{font-size:.75rem;color:rgba(255,255,255,.7)}
-    .panel-cta{width:100%;text-align:center}
 
     /* ══════════════════════════════════════
        PARA QUIÉN ES
@@ -287,16 +267,16 @@
       background:#facc15 !important;
     }
     .uc-numero{
-      font-size:.65rem;font-weight:700;text-transform:uppercase;
+      font-size:.75rem;font-weight:700;text-transform:uppercase;
       letter-spacing:.1em;color:#4b5563;margin-bottom:.4rem;
     }
-    .uc-card h3{font-size:1rem;color:#002B49;margin-bottom:.75rem}
+    .uc-card h3{font-size:1.2rem;color:#002B49;margin-bottom:.75rem}
     .uc-lista{
       list-style:none;display:flex;flex-direction:column;gap:.5rem;
     }
     .uc-lista li{
       display:flex;align-items:flex-start;gap:.6rem;
-      font-size:.85rem;color:#4b5563;line-height:1.55;
+      font-size:.95rem;color:#4b5563;line-height:1.55;
     }
     .uc-lista li::before{
       content:'→';color:#00f07c;font-weight:700;flex-shrink:0;margin-top:.05rem;
@@ -310,7 +290,7 @@
       display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;
     }
     .precio-card{
-      background:rgba(255,255,255,.07);
+      background:rgba(230, 169, 169, 0.07);
       border:1.5px solid rgba(255,255,255,.15);
       border-radius:1.5rem;
       padding:2rem 1.75rem;
@@ -332,16 +312,35 @@
       letter-spacing:.06em;
     }
     .precio-modalidad{
-      font-size:.72rem;font-weight:700;text-transform:uppercase;
+      font-size:.92rem;font-weight:700;text-transform:uppercase;
       letter-spacing:.1em;color:rgba(255,255,255,.6);margin-bottom:.75rem;
     }
     .precio-card.destacado .precio-modalidad{color:#4b5563 !important}
     .precio-monto{
-      font-family:'Lexend',sans-serif;font-size:2.4rem;font-weight:800;
-      color:#00f07c;line-height:1;margin-bottom:.3rem;
-    }
+  font-family:'Lexend',sans-serif;
+  font-size:2.4rem;
+  font-weight:800;
+  color:#00f07c;
+  line-height:1.1;
+  margin-bottom:.3rem;
+}
+
+.precio-anterior{
+  display:block;
+  font-size:1rem;
+  font-weight:700;
+  text-decoration:line-through;
+  opacity:.5;
+  margin-bottom:.2rem;
+}
+
+.precio-promocion{
+  display:block;
+  font-size:2.4rem;
+  font-weight:800;
+}
     .precio-card.destacado .precio-monto{color:#002B49 !important}
-    .precio-nota{font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:1.25rem}
+    .precio-nota{font-size:.98rem;color:rgba(255,255,255,.6);margin-bottom:1.25rem}
     .precio-card.destacado .precio-nota{color:#4b5563 !important}
     .precio-lista{
       list-style:none;text-align:left;display:flex;
@@ -349,7 +348,7 @@
     }
     .precio-lista li{
       display:flex;align-items:flex-start;gap:.5rem;
-      font-size:.82rem;color:rgba(255,255,255,.8);line-height:1.5;
+      font-size:.92rem;color:rgba(255,255,255,.8);line-height:1.5;
     }
     .precio-card.destacado .precio-lista li{color:#4b5563 !important}
     .precio-lista li::before{content:'✓';color:#00f07c;font-weight:700;flex-shrink:0}
@@ -440,12 +439,19 @@
     /* ══════════════════════════════════════
        CTA FINAL
     ══════════════════════════════════════ */
-    .final-cta{background:#00f07c !important;text-align:center;padding:4.5rem 0}
+    .final-cta{background:#fefefe !important;text-align:center;padding:4rem 0}
     .final-cta .section-title{color:#002B49}
     .final-cta .section-desc{color:#002B49;opacity:.82;margin:0 auto}
     .final-cta-meta{
       display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;
-      margin-top:1.25rem;font-size:.82rem;color:#002B49;opacity:.85;
+      margin-top:1.25rem;font-size:.82rem;color:#4b5563;
+    }
+    .hero-garantia{display:flex;align-items:center;gap:.4rem}
+    .hero-garantia-icon{
+      width:18px;height:18px;border-radius:50%;
+      background:#00f07c !important;color:#002B49;
+      display:flex;align-items:center;justify-content:center;
+      font-size:.65rem;font-weight:700;flex-shrink:0;
     }
 
     /* ══════════════════════════════════════
@@ -500,8 +506,7 @@
       .hero-estandar h1{font-size:1.65rem}
       .hero-actions{flex-direction:column;align-items:stretch}
       .hero-actions .btn-primary{text-align:center}
-      .hero-chips{gap:.5rem}
-      .chip{font-size:.72rem;padding:5px 11px}
+      .hero-chips{gap:.6rem}
 
       .section,.section-sm{padding:2.75rem 0}
       .perfiles-grid{grid-template-columns:1fr}
@@ -522,6 +527,7 @@
       .faq-body{padding:0 1.1rem 1.1rem;font-size:.88rem}
 
       .final-cta{padding:3rem 0}
+      .final-cta-meta{gap:1rem;font-size:.78rem}
       .footer{padding:2rem 1rem}
       .footer-links{gap:.5rem}
     }
@@ -534,6 +540,9 @@
 </head>
 <body>
 
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
   <nav class="nav pf-fullwidth" id="navbar">
     <a href="https://www.puntoformativo.com/" class="nav-logo">PUNTO FORMATIVO</a>
 
@@ -549,15 +558,18 @@
     </ul>
 
     <div class="nav-cta">
-      <a href="#contacto" class="btn-primary">WhatsApp</a>
+      <a href="https://wa.me/524423335393?text=Hola,%20me%20interesan%20las%20Certificaciones%20CONOCER" target="_blank" class="btn-primary">WhatsApp</a>
     </div>
   </nav>
 </div>
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
   <header class="hero-estandar pf-fullwidth" id="inicio">
     <div class="hero-left">
       <div class="hero-codigo">
         EC0679
-        <span class="badge">Inglés laboral con validez SEP</span>
+        <span class="badge">Inglés laboral</span>
       </div>
 
       <h1>Certifica tu dominio del inglés en el trabajo con validez oficial ante la SEP</h1>
@@ -565,46 +577,29 @@
       <p class="desc">La certificación <strong>EC0679</strong> valida que puedes usar el inglés de forma funcional en situaciones reales de trabajo: comunicación oral, escrita, comprensión auditiva y lectora. Un respaldo oficial que distingue tu perfil profesional en empresas nacionales e internacionales.</p>
 
       <div class="hero-actions">
-        <a href="#contacto" class="btn-primary large">Quiero certificarme</a>
+        <a href="https://wa.me/524423335393?text=Hola,%20me%20interesan%20las%20Certificaciones%20CONOCER" target="_blank" class="btn-primary large">Quiero certificarme</a>
         <a href="#temario" class="btn-secondary">Ver temario</a>
       </div>
 
       <div class="hero-chips">
-        <span class="chip"><span class="dot"></span>Modalidad: Presencial y en línea</span>
-        <span class="chip"><span class="dot"></span>Evaluación: 2 horas de examen</span>
-        <span class="chip"><span class="dot"></span>Validez: Nacional SEP</span>
+        <div class="chip"><div class="dot">✓</div><span>Modalidad presencial y en línea</span></div>
+        <div class="chip"><div class="dot">✓</div><span>Evaluación: 2 horas de examen</span></div>
+        <div class="chip"><div class="dot">✓</div><span>Validez: Nacional SEP</span></div>
       </div>
     </div>
 
-    <aside class="hero-panel" aria-label="Resumen del estándar">
-      <p class="hero-panel-title">Resumen del estándar</p>
-
-      <div class="panel-row">
-        <span class="panel-label">Duración estimada</span>
-        <span class="panel-value">1 semana para agendar</span>
-      </div>
-      <div class="panel-row">
-        <span class="panel-label">Modalidad</span>
-        <span class="panel-value">Presencial / Online</span>
-      </div>
-      <div class="panel-row">
-        <span class="panel-label">Nivel</span>
-        <span class="panel-value">Competencia laboral certificada</span>
-      </div>
-      <div class="panel-row">
-        <span class="panel-label">Certificado emitido por</span>
-        <span class="panel-value">CONOCER · SEP</span>
-      </div>
-
-      <div class="panel-precio">
-        <div class="monto">Desde $2,000 MXN</div>
-        <div class="nota">Evaluación directa · 50% dto. con curso de alineación</div>
-      </div>
-
-      <a href="#contacto" class="btn-primary panel-cta">Agenda tu asesoría gratuita</a>
-    </aside>
+    <div class="hero-panel">
+      <img
+        src="https://images.unsplash.com/photo-1558204458-fcd9d63b9662?q=80&w=1423&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Persona certificando su inglés laboral"
+        loading="lazy"
+      />
+    </div>
   </header>
 
+  <!-- ══════════════════════════════════════
+       PARA QUIÉN ES
+  ══════════════════════════════════════ -->
   <section class="section para-quien pf-fullwidth" id="para-quien">
     <div class="container">
       <div style="text-align:center;">
@@ -635,6 +630,9 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       TEMARIO
+  ══════════════════════════════════════ -->
   <section class="section temario pf-fullwidth" id="temario">
     <div class="container">
       <div style="text-align:center;">
@@ -646,8 +644,8 @@
       <div class="temario-grid">
 
         <article class="uc-card">
-          <div class="uc-numero">Unidad de competencia 1</div>
-          <h3>Comprensión auditiva en contexto laboral</h3>
+          <div class="uc-numero">Elemento 1 del estándar</div>
+          <h3>Emplear la comprensión auditiva </h3>
           <ul class="uc-lista">
             <li>Seguir indicaciones detalladas en procesos o flujos de trabajo</li>
             <li>Entender instrucciones orales en reuniones o llamadas de trabajo</li>
@@ -657,8 +655,8 @@
         </article>
 
         <article class="uc-card">
-          <div class="uc-numero">Unidad de competencia 2</div>
-          <h3>Comprensión oral (expresión hablada)</h3>
+          <div class="uc-numero">Elemento 2 del estándar</div>
+          <h3>Emplear la comprensión oral</h3>
           <ul class="uc-lista">
             <li>Realizar una presentación sencilla sobre un producto o servicio</li>
             <li>Explicar características, procesos o funciones en inglés</li>
@@ -668,8 +666,8 @@
         </article>
 
         <article class="uc-card">
-          <div class="uc-numero">Unidad de competencia 3</div>
-          <h3>Expresión escrita en entorno profesional</h3>
+          <div class="uc-numero">Elemento 3 del estándar</div>
+          <h3>Emplear la expresión escrita</h3>
           <ul class="uc-lista">
             <li>Responder textos laborales (correos, formularios, reportes)</li>
             <li>Redactar con claridad según el contexto y propósito comunicativo</li>
@@ -679,8 +677,8 @@
         </article>
 
         <article class="uc-card">
-          <div class="uc-numero">Unidad de competencia 4</div>
-          <h3>Comprensión de lectura en contexto laboral</h3>
+          <div class="uc-numero">Elemento 4 del estándar</div>
+          <h3>Emplear la comprensión de lectura</h3>
           <ul class="uc-lista">
             <li>Identificar información específica en textos breves y sencillos</li>
             <li>Comprender documentos habituales del entorno productivo</li>
@@ -693,84 +691,61 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       PRECIO
+  ══════════════════════════════════════ -->
   <section class="section precio-section pf-fullwidth" id="precio">
     <div class="container">
       <div style="text-align:center;">
-        <span class="eyebrow azul">Inversión y modalidades</span>
+        <span class="eyebrow">Inversión y modalidades</span>
         <h2 class="section-title" style="color:#ffffff;">Elige la modalidad que mejor se adapta a ti</h2>
         <p class="section-desc" style="color:rgba(255,255,255,.8);margin:0 auto;">Todas las modalidades incluyen acompañamiento completo, materiales y gestión del certificado ante la SEP.</p>
       </div>
 
-      <!-- Grid 2x2 para los 4 esquemas del EC0679 -->
-      <div class="precio-grid" style="grid-template-columns:repeat(2,1fr);">
+<!-- Grid 2x2 para los 4 esquemas del EC0679 -->
+<div class="precio-grid" style="grid-template-columns:repeat(2,1fr);">
 
-        <div class="precio-card">
-          <div class="precio-modalidad">Evaluación directa</div>
-          <div class="precio-monto">$2,000 MXN</div>
-          <div class="precio-nota">Para quienes ya tienen experiencia en inglés laboral</div>
-          <ul class="precio-lista">
-            <li>1 semana para agendar</li>
-            <li>2 horas de examen</li>
-            <li>Diagnóstico + Plan de evaluación</li>
-            <li>Modalidad presencial u online</li>
-          </ul>
-          <p style="font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:1.25rem;line-height:1.5;">* Gestión del certificado SEP: $1,000 MXN adicionales al obtener juicio de competente.</p>
-          <a href="#contacto" class="btn-primary" style="width:100%;text-align:center;">Quiero evaluarme</a>
-        </div>
+  <div class="precio-card">
+    <div class="precio-modalidad">Evaluación directa</div>
+    <div class="precio-monto">$2,000 MXN</div>
+    <div class="precio-nota">Para quienes ya cuentan con buen dominio del inglés laboral y buscan avanzar directo al proceso de evaluación.</div>
+    <ul class="precio-lista">
+      <li>1 semana para agendar</li>
+      <li>2 horas de examen</li>
+      <li>Diagnóstico + plan de evaluación</li>
+      <li>Modalidad presencial u online</li>
+    </ul>
+  
+    <a href="https://wa.me/524423335393?text=Hola,%20me%20interesan%20las%20Certificaciones%20CONOCER" target="_blank" class="btn-primary" style="width:100%;text-align:center;">Quiero evaluarme</a>
+  </div>
 
-        <div class="precio-card destacado">
-          <span class="destacado-label">Más elegido</span>
-          <div class="precio-modalidad">Curso de Alineación (8 hrs)</div>
-          <div class="precio-monto">$2,200 MXN</div>
-          <div class="precio-nota">Incluye 50% dto. en evaluación por 3 meses</div>
-          <ul class="precio-lista">
-            <li>8 horas de curso + 1 hora de asesoría</li>
-            <li>Plataforma y comunidad privada</li>
-            <li>Manual, guía de estudio y ejemplos</li>
-            <li>Simulación de evaluación</li>
-            <li>Opción a Constancia DC-3</li>
-            <li>Modalidades: asíncrona, grupal o presencial</li>
-          </ul>
-          <a href="#contacto" class="btn-primary" style="width:100%;text-align:center;">Quiero inscribirme</a>
-        </div>
+  <div class="precio-card destacado">
+    <span class="destacado-label">Promoción especial</span>
+    <div class="precio-modalidad">Curso de alineación + evaluación</div>
+    <div class="precio-monto">
+      <span class="precio-anterior">$8,000 MXN</span>
+      <span class="precio-promocion">$4,000 MXN</span>
+    </div>
+    <div class="precio-nota"> Ideal si quieres prepararte mejor antes de presentar tu evaluación.</div>
+    <ul class="precio-lista">
+      <li>Curso de preparación online con guía de estudio</li>
+      <li>Simulaciones prácticas para llegar con más seguridad</li>
+      <li>Comunidad privada y acompañamiento durante el proceso</li>
+      <li>Asesorías para resolver dudas y afinar tu preparación</li>
+    </ul>
+    <a href="https://wa.me/524423335393?text=Hola,%20me%20interesan%20las%20Certificaciones%20CONOCER" target="_blank" class="btn-primary" style="width:100%;text-align:center;">Quiero inscribirme</a>
+  </div>
+</div>
 
-        <div class="precio-card">
-          <div class="precio-modalidad">Curso de Fortalecimiento (72 hrs)</div>
-          <div class="precio-monto">$200 MXN</div>
-          <div class="precio-nota">Por sesión de 1.5 hrs · Nivel intermedio</div>
-          <ul class="precio-lista">
-            <li>6 meses · 3 días por semana</li>
-            <li>Síncrono vía Zoom + grabaciones</li>
-            <li>Actividades en contextos laborales reales</li>
-            <li>Simulaciones de desempeño</li>
-            <li>Seguimiento académico incluido</li>
-            <li>Opción a Constancia DC-3</li>
-          </ul>
-          <p style="font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:1.25rem;line-height:1.5;">* Pago por sesión cursada. Descuentos por paquetes de sesiones.</p>
-          <a href="#contacto" class="btn-primary" style="width:100%;text-align:center;">Quiero inscribirme</a>
-        </div>
-
-        <div class="precio-card">
-          <div class="precio-modalidad">Curso de Capacitación (148 hrs)</div>
-          <div class="precio-monto">$200 MXN</div>
-          <div class="precio-nota">Por sesión de 1.5 hrs · Desde nivel inicial</div>
-          <ul class="precio-lista">
-            <li>12 meses · 3 días por semana</li>
-            <li>Síncrono vía Zoom + grabaciones</li>
-            <li>Desarrollo progresivo hasta nivel certificable</li>
-            <li>Actividades orientadas a contextos laborales</li>
-            <li>Simulaciones de desempeño</li>
-            <li>Opción a Constancia DC-3</li>
-          </ul>
-          <p style="font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:1.25rem;line-height:1.5;">* Contenidos habilitados conforme a sesiones cursadas · Acceso activo durante el programa.</p>
-          <a href="#contacto" class="btn-primary" style="width:100%;text-align:center;">Quiero inscribirme</a>
-        </div>
 
       </div>
-      <p style="text-align:center;font-size:.78rem;color:rgba(255,255,255,.5);margin-top:2rem;">Todos los esquemas incluyen acompañamiento y gestión del certificado oficial ante la SEP al obtener el juicio de competente.</p>
+      <p style="text-align:center;font-size:1.0rem;color:rgb(255, 255, 255);margin-top:2rem;">Al obtener el juicio de competente se deberá realizar el pago por la emisión de certificado con un costo de $1000</p>
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       PROCESO
+  ══════════════════════════════════════ -->
   <section class="section proceso-section pf-fullwidth" id="proceso">
     <div class="container">
       <div style="text-align:center;">
@@ -835,6 +810,9 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════ -->
   <section class="testimonios-section pf-fullwidth" id="testimonios">
     <div class="container">
       <div style="text-align:center;">
@@ -881,74 +859,122 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════ -->
   <section class="section faq-section pf-fullwidth" id="faq">
     <div class="container">
       <div class="faq-wrap">
         <div style="text-align:center;">
-          <span class="eyebrow">Preguntas frecuentes</span>
-          <h2 class="section-title">Todo sobre el EC0679</h2>
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-title">Preguntas frecuentes sobre la certificación EC0679</h2>
           <p class="section-desc" style="margin:0 auto;">Resolvemos las dudas más comunes antes de que inicies tu proceso.</p>
         </div>
 
-        <div class="faq-list">
+  <div class="faq-list">
 
-          <div class="faq-item">
-            <details>
-              <summary>¿Qué nivel de inglés necesito para certificarme en el EC0679?<span class="faq-icon">+</span></summary>
-              <div class="faq-body">No se exige un nivel académico específico. El estándar evalúa competencias comunicativas funcionales en el entorno laboral. Si ya usas el inglés en tu trabajo de forma habitual, es muy probable que cuentes con las competencias requeridas. En tu asesoría inicial te orientamos con honestidad sobre tu punto de partida.</div>
-            </details>
-          </div>
+  <div class="faq-item">
+    <details>
+      <summary>¿Qué es el EC0679 y qué evalúa?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        El <strong>EC0679</strong> es el estándar de competencia del CONOCER enfocado en el <strong>uso de la lengua inglesa en un contexto laboral</strong>. Evalúa si puedes comunicarte en inglés de forma funcional en situaciones reales de trabajo, tanto en <strong>comprensión auditiva y lectora</strong> como en <strong>expresión oral y escrita</strong>. No es un examen académico tradicional, sino una certificación orientada al entorno profesional.
+      </div>
+    </details>
+  </div>
 
-          <div class="faq-item">
-            <details>
-              <summary>¿En qué se diferencia el EC0679 de exámenes como TOEFL o Cambridge?<span class="faq-icon">+</span></summary>
-              <div class="faq-body">El EC0679 no evalúa inglés académico ni gramática aislada. Evalúa tu capacidad real de comunicarte en inglés dentro de situaciones laborales concretas: seguir instrucciones, presentar productos, leer documentos de trabajo, redactar correos. Es una certificación de competencia laboral con validez ante la SEP, no un examen de idioma general.</div>
-            </details>
-          </div>
+  <div class="faq-item">
+    <details>
+      <summary>¿Qué nivel de inglés necesito para certificarme?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        No necesitas una certificación previa ni un nivel escolar específico. Lo que se evalúa es tu capacidad para usar el inglés en <strong>situaciones laborales reales</strong>. Si ya utilizas el idioma en reuniones, correos, instrucciones, reportes o interacciones de trabajo, es probable que ya tengas una base importante. Antes de evaluarte, realizamos un <strong>diagnóstico previo</strong> para orientarte con claridad y ayudarte a llegar con mayores posibilidades de obtener el juicio de <strong>competente</strong>.
+      </div>
+    </details>
+  </div>
 
-          <div class="faq-item">
-            <details>
-              <summary>¿Qué pasa si no obtengo el juicio de competente?<span class="faq-icon">+</span></summary>
-              <div class="faq-body">Recibes retroalimentación técnica detallada sobre las áreas de oportunidad. El pago por la gestión del certificado ante la SEP ($1,000 MXN) solo se realiza una vez obtenido el juicio de competente. Si optas por el Curso de Alineación, obtienes un 50% de descuento en la evaluación, vigente durante 3 meses.</div>
-            </details>
-          </div>
+  <div class="faq-item">
+    <details>
+      <summary>¿En qué se diferencia el EC0679 de TOEFL, Cambridge o IELTS?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        La diferencia principal está en el enfoque. Exámenes como <strong>TOEFL</strong>, <strong>Cambridge</strong> o <strong>IELTS</strong> suelen medir inglés general o académico. El <strong>EC0679</strong> evalúa inglés aplicado al trabajo: comprender instrucciones, comunicar ideas en un contexto profesional, redactar textos laborales y desenvolverte en situaciones reales del entorno productivo. Si buscas una <strong>certificación de inglés laboral con validez oficial en México</strong>, este estándar está mucho más alineado a esa necesidad.
+      </div>
+    </details>
+  </div>
 
-          <div class="faq-item">
-            <details>
-              <summary>¿Cuánto cuesta la certificación EC0679?<span class="faq-icon">+</span></summary>
-              <div class="faq-body">El costo varía según la modalidad que elijas. Puedes ver las opciones en la sección de inversión o agendar una asesoría gratuita para recibir una cotización personalizada.</div>
-            </details>
-          </div>
+  <div class="faq-item">
+    <details>
+      <summary>¿La certificación EC0679 tiene validez oficial ante la SEP?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        Sí. El <strong>EC0679</strong> forma parte del sistema de competencias del <strong>CONOCER</strong> y su certificación cuenta con <strong>validez oficial ante la SEP</strong>. Esto la convierte en una opción sólida para quienes buscan respaldar formalmente su dominio del inglés en el ámbito laboral y fortalecer su perfil profesional con un documento oficial.
+      </div>
+    </details>
+  </div>
 
-          <div class="faq-item">
-            <details>
-              <summary>¿El certificado tiene validez en todo México?<span class="faq-icon">+</span></summary>
-              <div class="faq-body">Sí. Al ser emitido por el CONOCER con respaldo de la SEP, tiene validez oficial en todo el territorio nacional. Tu nombre queda registrado en el RENAP (Registro Nacional de Personas con Competencias Certificadas).</div>
-            </details>
-          </div>
+  <div class="faq-item">
+    <details>
+      <summary>¿Cuánto cuesta la certificación EC0679?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        El costo depende de la modalidad que elijas. Si ya tienes un buen dominio del inglés laboral, puedes optar por la <strong>evaluación directa</strong>. Si prefieres prepararte antes, existe la opción de <strong>curso de alineación + evaluación</strong>. Elegir bien la ruta desde el inicio te ayuda a invertir con más claridad y a llegar mejor preparado al proceso.
+      </div>
+    </details>
+  </div>
 
-        </div>
+  <div class="faq-item">
+    <details>
+      <summary>¿Puedo hacer la evaluación en línea?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        Sí. Contamos con opción de <strong>evaluación en línea</strong>, además de modalidad presencial en Querétaro. Esto facilita el proceso para personas que trabajan, viven fuera de la ciudad o necesitan una alternativa más flexible sin dejar de seguir una ruta formal de certificación.
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-item">
+    <details>
+      <summary>¿Qué pasa si no obtengo el juicio de competente?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        Si no obtienes el juicio de <strong>competente</strong>, cuentas con una <strong>oportunidad adicional</strong> para volver a presentarte. Aun así, la idea es que no llegues a evaluación sin claridad. Antes del proceso hacemos un <strong>diagnóstico previo</strong> para identificar tu nivel y orientarte hacia la ruta más conveniente, con el objetivo de que llegues mejor preparado desde el inicio.
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-item">
+    <details>
+      <summary>¿La certificación EC0679 me puede ayudar laboralmente?<span class="faq-icon">+</span></summary>
+      <div class="faq-body">
+        Sí. Para muchas personas, el valor está en poder <strong>respaldar formalmente</strong> una habilidad que ya usan en su trabajo. La certificación puede ayudarte a fortalecer tu perfil, proyectar mayor seriedad profesional y dar más peso a tu experiencia ante empresas, instituciones, procesos internos o nuevas oportunidades laborales. En lugar de solo decir que sabes inglés, puedes demostrarlo con un <strong>respaldo oficial</strong>.
+      </div>
+    </details>
+  </div>
+
+</div>
       </div>
     </div>
   </section>
 
-  <section class="final-cta pf-fullwidth" id="contacto">
+  <!-- ══════════════════════════════════════
+       CTA FINAL / CONTACTO
+  ══════════════════════════════════════ -->
+<section class="final-cta pf-fullwidth" id="contacto">
     <div class="container">
-      <h2 class="section-title">Certifica tu inglés laboral con validez oficial ante la SEP</h2>
-      <p class="section-desc">Agenda tu asesoría gratuita. Te orientamos sobre el estándar, tu punto de partida y la ruta más adecuada para ti, sin compromiso.</p>
+      <h2 class="section-title">Conoce tu estándar y comienza</h2>
+      <p class="section-desc">
+        Si ya sabes qué estándar te interesa o quieres que te orientemos, agenda una asesoría gratuita. Contáctanos por WhatsApp y te respondemos rápido.
+      </p>
 
       <div style="margin-top:2rem;">
-        <a href="https://wa.me/5210000000000" class="btn-primary large">Quiero certificarme en EC0679</a>
+        <a href="https://wa.me/524423335393?text=Hola,%20me%20interesan%20las%20Certificaciones%20CONOCER" target="_blank" class="btn-primary large">Quiero certificarme</a>
       </div>
 
       <div class="final-cta-meta">
-        <div>✓ Asesoría inicial gratuita</div>
-        <div>✓ Proceso 100% guiado</div>
-        <div>✓ Certificado con validez SEP</div>
+        <div class="hero-garantia"><div class="hero-garantia-icon">✓</div><span>Proceso guiado</span></div>
+        <div class="hero-garantia"><div class="hero-garantia-icon">✓</div><span>Respuesta rápida</span></div>
+        <div class="hero-garantia"><div class="hero-garantia-icon">✓</div><span>Validez oficial SEP</span></div>
       </div>
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
   <footer class="footer pf-fullwidth">
     <div class="footer-inner">
       <div class="footer-brand">
