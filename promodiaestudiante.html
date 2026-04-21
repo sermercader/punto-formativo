@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#002B49" />
+  <title>Certificación EC0679 Inglés Laboral con validez SEP | Punto Formativo</title>
+  <meta name="description" content="Respalda tu inglés en contexto laboral con la certificación EC0679 avalada por SEP y CONOCER. Convocatoria nacional abierta con beca del 50% por Día del Estudiante." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --azul:#002B49;
+      --azul-2:#0b3b61;
+      --verde:#00f07c;
+      --amarillo:#facc15;
+      --amarillo-claro:#e7d405;
+      --gris-fondo:#F4F7F9;
+      --gris-texto:#4b5563;
+      --gris-linea:#d9e1e7;
+      --shadow-offset:4px 4px 0px #002B49;
+      --radius-lg:18px;
+      --radius-md:14px;
+      --max:1160px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat',sans-serif;background:#F4F7F9;color:#002B49;overflow-x:hidden;}
+    h1,h2,h3,h4{font-family:'Lexend',sans-serif}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+
+    .eyebrow{
+      display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;
+      letter-spacing:.08em;color:#050505;background:#e7d405;padding:6px 14px;
+      border-radius:999px;margin-bottom:1rem;
+    }
+    .section-title{font-size:clamp(1.6rem,4vw,3rem);line-height:1.15;font-weight:800;margin-bottom:.75rem;color:#002B49;}
+    .section-desc{max-width:760px;color:#4b5563;line-height:1.75;font-size:.95rem;}
+    .section-desc-callout{font-family:'Lexend',sans-serif;font-size:clamp(1.08rem,2.2vw,1.28rem);font-weight:800;color:#002B49;}
+
+    /* BOTONES */
+    .btn-primary{
+      display:inline-block;background:#00f07c;color:#002B49;font-weight:700;
+      padding:14px 28px;border-radius:999px;box-shadow:4px 4px 0px #002B49;
+      text-transform:uppercase;letter-spacing:.04em;font-size:.85rem;
+      transition:.25s ease;border:none;cursor:pointer;white-space:nowrap;font-family:'Montserrat',sans-serif;
+    }
+    .btn-primary:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0px #002B49;}
+    .btn-primary.large{padding:16px 36px;font-size:.95rem}
+
+    .btn-hero-claim{
+      width:100%;min-height:280px;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;gap:.35rem;
+      background:#00f07c;color:#002B49;border-radius:24px;
+      box-shadow:4px 4px 0px #002B49;border:3px solid #002B49;
+      text-transform:uppercase;letter-spacing:.06em;
+      font-family:'Lexend',sans-serif;font-weight:800;transition:.25s ease;cursor:pointer;
+    }
+    .btn-hero-claim:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0px #002B49;}
+    .btn-hero-claim__top{font-size:1rem;font-family:'Montserrat',sans-serif;font-weight:700;letter-spacing:.12em;}
+    .btn-hero-claim__big{font-size:clamp(4rem,6vw,6rem);line-height:1;}
+    .btn-hero-claim__sub{font-size:.95rem;font-family:'Montserrat',sans-serif;font-weight:700;opacity:.9;letter-spacing:.08em;}
+    .hero-right-note{margin-top:.85rem;font-size:.9rem;color:#4b5563;text-align:center;}
+
+    /* NAV */
+    .nav{
+      position:sticky;top:0;z-index:1000;display:flex;justify-content:space-between;
+      align-items:center;gap:1rem;padding:1rem 1.5rem;
+      background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:4px solid #002B49;
+    }
+    .nav-logo{font-family:'Lexend',sans-serif;font-weight:800;font-size:.95rem;white-space:nowrap;flex-shrink:0;}
+    .nav-toggle{
+      display:none;width:40px;height:40px;border:2px solid #002B49;border-radius:10px;
+      background:#ffffff;cursor:pointer;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .nav-toggle span{display:block;width:18px;height:2px;background:#002B49;position:relative;}
+    .nav-toggle span::before,.nav-toggle span::after{content:"";display:block;width:18px;height:2px;background:#002B49;position:absolute;}
+    .nav-toggle span::before{top:-6px}
+    .nav-toggle span::after{top:6px}
+    .nav-links{display:flex;gap:1.5rem;list-style:none;flex:1;justify-content:center;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;}
+
+    /* BANNER */
+    .banner-convocatoria{
+      background:#002B49;color:#ffffff;text-align:center;padding:.6rem 1rem;
+      font-size:.78rem;font-weight:600;letter-spacing:.03em;
+      display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;
+    }
+    .banner-pill{background:#00f07c;color:#002B49;font-weight:700;font-size:.7rem;padding:3px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.06em;}
+
+    /* HERO */
+    .hero{
+      background:#ffffff;padding:5rem 1.5rem 4rem;display:grid;
+      grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;position:relative;overflow:hidden;
+    }
+    .hero-circle{position:absolute;width:480px;height:480px;border-radius:50%;background:#e8fff5;top:-160px;right:-120px;z-index:0;}
+    .hero-circle-2{position:absolute;width:200px;height:200px;border-radius:50%;background:#facc1520;bottom:-60px;left:-60px;z-index:0;}
+    .hero-left,.hero-right{position:relative;z-index:1}
+    .hero h1{font-size:clamp(1.8rem,4vw,3.6rem);line-height:1.1;margin-bottom:1.2rem;letter-spacing:-.02em;}
+    .hero h1 em{font-style:normal;background:#e7d405;padding:0 6px;border-radius:4px;}
+    .hero-desc{font-size:1rem;line-height:1.75;color:#4b5563;max-width:660px;margin-bottom:1.8rem;}
+    .hero-desc strong{color:#002B49}
+    .hero-microcopy{display:flex;flex-wrap:wrap;gap:.75rem;font-size:.78rem;color:#4b5563;}
+    .hero-mc-item{display:flex;align-items:center;gap:.35rem;}
+    .hero-mc-icon{width:16px;height:16px;border-radius:50%;background:#00f07c;color:#002B49;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;}
+
+    /* STATS */
+    .stats-bar{background:#002B49;padding:2.5rem 0;}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;}
+    .stat-num{font-family:'Lexend',sans-serif;font-size:clamp(1.4rem,3vw,2.2rem);color:#ffffff;font-weight:800;line-height:1;margin-bottom:.4rem;}
+    .stat-label{font-size:.78rem;color:rgba(255,255,255,.75);line-height:1.5;}
+
+    /* PAIN */
+    .pain-section{background:#ffffff;padding:5rem 0;}
+    .pain-section .section-title em{font-style:normal;background:#e7d405;padding:0 6px;border-radius:4px;}
+    .pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;align-items:start;}
+    .pain-col-title{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem;}
+    .pain-col-title.red{color:#dc2626}
+    .pain-col-title.green{color:#059669}
+    .pain-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;}
+    .pain-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:#4b5563;line-height:1.55;}
+    .pain-icon-bad{width:22px;height:22px;border-radius:50%;background:#fee2e2;color:#dc2626;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:1px;}
+    .pain-icon-good{width:22px;height:22px;border-radius:50%;background:#00f07c;color:#002B49;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:1px;}
+    .pain-highlight{background:#F4F7F9;border-left:4px solid #002B49;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:1.25rem 1.5rem;margin-top:2.5rem;}
+    .pain-highlight p{font-size:.95rem;color:#002B49;line-height:1.7;}
+
+    /* PROPS */
+    .props-section{background:#F4F7F9;padding:5rem 0;}
+    .props-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem;}
+    .prop-card{background:#ffffff;border:2px solid #002B49;border-radius:var(--radius-lg);padding:1.75rem;transition:.25s ease;}
+    .prop-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(0,43,73,.1);}
+    .prop-icon{width:44px;height:44px;border-radius:10px;background:#facc15;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1.1rem;}
+    .prop-card h3{font-size:1rem;font-weight:700;margin-bottom:.6rem;color:#002B49;line-height:1.3;}
+    .prop-card p{font-size:.88rem;color:#4b5563;line-height:1.65;}
+    .prop-card.featured{background:#002B49;border-color:#002B49;}
+    .prop-card.featured h3{color:#facc15}
+    .prop-card.featured p{color:rgba(255,255,255,.82)}
+    .prop-card.featured .prop-icon{background:#00f07c}
+
+    /* SECCIÓN BASE PROCESO */
+    .proceso-section{background:#ffffff;padding:5rem 0;}
+
+    /* EVALÚA — Layout D: cards horizontales con acento izquierdo */
+    .evalua-list{display:flex;flex-direction:column;gap:12px;margin-top:2.5rem;max-width:720px;margin-left:auto;margin-right:auto;}
+    .evalua-card{display:flex;gap:1.25rem;background:#ffffff;border:2px solid #002B49;border-radius:var(--radius-lg);padding:1.25rem 1.5rem;border-left:6px solid #002B49;}
+    .evalua-num{font-family:'Lexend',sans-serif;font-size:1.8rem;font-weight:800;color:#e7d405;line-height:1;flex-shrink:0;width:40px;}
+    .evalua-body h3{font-size:1rem;font-weight:700;color:#002B49;margin-bottom:.4rem;}
+    .evalua-body p{font-size:.88rem;color:#4b5563;line-height:1.65;}
+
+    /* CÓMO FUNCIONA — Layout C: lista vertical con línea conectora */
+    .proceso-media{
+      display:grid;
+      grid-template-columns:minmax(260px,.9fr) minmax(320px,1.1fr);
+      gap:2.5rem;
+      align-items:start;
+      margin-top:2.5rem;
+    }
+    .proceso-media-image{
+      position:relative;
+      border-radius:var(--radius-xl);
+      border:2px solid #002B49;
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(0,240,124,.35), transparent 45%),
+        radial-gradient(900px 500px at 80% 15%, rgba(250,204,21,.35), transparent 45%),
+        linear-gradient(135deg, #ffffff, #F4F7F9);
+      box-shadow:var(--shadow-soft);
+      aspect-ratio:4 / 5;
+      overflow:hidden;
+      min-height:320px;
+    }
+    .proceso-media-image img{width:100%;height:100%;object-fit:cover;display:block;}
+    .proceso-media-image::before{
+      content:"";
+      position:absolute;
+      inset:18px;
+      border-radius:calc(var(--radius-xl) - 8px);
+      border:2px dashed rgba(0,43,73,.35);
+      background:linear-gradient(180deg, rgba(255,255,255,.75), rgba(244,247,249,.6));
+    }
+    .proceso-media-label{
+      position:absolute;
+      left:22px;
+      bottom:18px;
+      font-family:'Lexend',sans-serif;
+      font-weight:800;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      font-size:.75rem;
+      color:#002B49;
+      background:rgba(255,255,255,.85);
+      border:1px solid rgba(0,43,73,.18);
+      border-radius:999px;
+      padding:.45rem .75rem;
+    }
+    .proceso-media .proceso-vertical{max-width:none;margin:0;}
+    .proceso-vertical{max-width:600px;margin:2.5rem auto 0;}
+    .proceso-v-item{display:flex;gap:1.25rem;}
+    .proceso-v-left{display:flex;flex-direction:column;align-items:center;}
+    .proceso-v-num{
+      width:48px;height:48px;border-radius:50%;background:#002B49;color:#facc15;
+      font-family:'Lexend',sans-serif;font-size:1rem;font-weight:800;
+      display:flex;align-items:center;justify-content:center;flex-shrink:0;
+      border:3px solid #F4F7F9;box-shadow:0 0 0 2px #002B49;
+    }
+    .proceso-v-line{width:2px;flex:1;background:#d9e1e7;margin:6px auto;min-height:2rem;}
+    .proceso-v-body{padding-top:10px;padding-bottom:2rem;}
+    .proceso-v-body h3{font-size:1.05rem;font-weight:700;color:#002B49;margin-bottom:.5rem;}
+    .proceso-v-body p{font-size:.88rem;color:#4b5563;line-height:1.65;}
+
+    @media (max-width: 900px){
+      .proceso-media{grid-template-columns:1fr;gap:1.75rem;}
+      .proceso-media-image{aspect-ratio:16 / 9;min-height:220px;}
+    }
+
+    /* TESTIMONIOS */
+    .testimonios-section{background:#F4F7F9;padding:5rem 0;}
+    .testimonios-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem;}
+    .testimonio-card{
+      background:#ffffff;padding:1.75rem;border-radius:var(--radius-lg);
+      border:1px solid rgba(0,0,0,0.05);display:flex;flex-direction:column;
+      justify-content:space-between;transition:all .3s ease;
+    }
+    .testimonio-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.06);border-color:#facc15;}
+    .stars{color:#ffb400;font-size:13px;margin-bottom:.75rem;letter-spacing:.05em}
+    .quote-title{font-family:'Lexend',sans-serif;font-size:.95rem;font-weight:700;color:#002B49;margin-bottom:.6rem;}
+    .quote-body{font-size:.88rem;color:#374151;line-height:1.7;margin-bottom:1.25rem;}
+    .author-info{border-top:1px solid #f1f5f9;padding-top:.75rem;}
+    .author-name{display:block;font-weight:700;font-size:.85rem;color:#0f172a;margin-bottom:3px;}
+    .author-tag{font-size:.72rem;color:#64748b;text-transform:uppercase;letter-spacing:.06em;}
+
+    /* FAQ */
+    .faq-section{background:#ffffff;padding:5rem 0;}
+    .faq-wrap{max-width:760px;margin:0 auto}
+    .faq-list{display:flex;flex-direction:column;gap:1rem;margin-top:2.5rem;}
+    .faq-item{border:2px solid #002B49;border-radius:var(--radius-md);overflow:hidden;box-shadow:4px 4px 0px #002B49;background:#ffffff;}
+    .faq-item details{width:100%}
+    .faq-item summary{
+      list-style:none;cursor:pointer;padding:1.1rem 1.4rem;display:flex;
+      justify-content:space-between;align-items:center;
+      font-family:'Lexend',sans-serif;font-weight:700;font-size:.95rem;color:#002B49;gap:.75rem;transition:.15s ease;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary:hover{background:#e7d405}
+    .faq-icon{font-size:1.4rem;font-weight:700;transition:.2s ease;flex-shrink:0;}
+    .faq-item details[open] .faq-icon{transform:rotate(45deg)}
+    .faq-body{padding:0 1.4rem 1.4rem;color:#374151;line-height:1.75;font-size:.92rem;border-top:1px solid #f3f4f6;}
+
+    /* CLOSER */
+    .closer-section{background:#002B49;padding:5rem 0;text-align:center;}
+    .closer-section .section-title{color:#ffffff}
+    .closer-bullets{display:flex;flex-direction:column;align-items:center;gap:.6rem;margin:1.75rem 0 2.5rem;}
+    .closer-bullet{display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.85);max-width:520px;text-align:left;}
+    .closer-check{width:20px;height:20px;border-radius:50%;background:#00f07c;color:#002B49;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;flex-shrink:0;}
+    .closer-microcopy{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-top:1.25rem;font-size:.8rem;color:rgba(255,255,255,.65);}
+
+    /* FUENTES */
+    .fuentes-section{background:var(--gris-fondo);padding:2.25rem 0 2.5rem;border-top:1px solid var(--gris-linea);}
+    .fuentes{max-width:720px;margin:0 auto;}
+    .fuentes p{font-size:.78rem;line-height:1.65;color:var(--gris-texto);}
+    .fuentes p:first-child{font-family:'Lexend',sans-serif;font-weight:800;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:#002B49;margin-bottom:.85rem;}
+    .fuentes p + p{margin-top:.55rem}
+    .fuentes a{color:#0b3b61;text-decoration:underline;text-underline-offset:2px;word-break:break-word;}
+    .fuentes a:hover{color:#002B49}
+
+    /* FOOTER */
+    .footer{background:#002B49;color:#ffffff;padding:2.5rem 1.5rem;border-top:1px solid rgba(255,255,255,.1);}
+    .footer-inner{max-width:1160px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap;}
+    .footer-brand .name{font-family:'Lexend',sans-serif;font-weight:800;font-size:1rem;margin-bottom:.5rem;}
+    .footer-brand .sub{font-size:.78rem;opacity:.65;line-height:1.75}
+    .footer-right{display:flex;flex-direction:column;align-items:flex-end;gap:.5rem;}
+    .footer-right p,.footer-right a{font-size:.78rem;opacity:.65}
+    .footer-right a{text-decoration:underline}
+    .footer-links{display:flex;gap:.75rem;flex-wrap:wrap;font-size:.72rem;opacity:.55;}
+    .footer-links a{text-decoration:underline}
+
+    /* RESPONSIVE */
+    @media (max-width:960px){
+      .hero{grid-template-columns:1fr;padding:3.5rem 1.5rem}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .pain-grid{grid-template-columns:1fr}
+      .props-grid{grid-template-columns:1fr 1fr}
+      .testimonios-grid{grid-template-columns:1fr 1fr}
+      .footer-inner{flex-direction:column}
+      .footer-right{align-items:flex-start}
+    }
+    @media (max-width:640px){
+      .nav{padding:.85rem 1rem;flex-wrap:wrap}
+      .nav-toggle{display:flex}
+      .nav-links{display:none;flex-direction:column;width:100%;order:3;padding-top:.75rem;border-top:1px solid #e5e7eb;margin-top:.5rem;gap:0;}
+      .nav-links li{border-bottom:1px solid #f3f4f6}
+      .nav-links a{display:block;padding:.8rem 0;font-size:.8rem}
+      .nav.open .nav-links{display:flex}
+      .banner-convocatoria{flex-direction:column;gap:.4rem;font-size:.72rem}
+      .hero{padding:2.5rem 1rem}
+      .hero h1{font-size:1.7rem}
+      .props-grid{grid-template-columns:1fr}
+      .testimonios-grid{grid-template-columns:1fr}
+      .stats-grid{grid-template-columns:1fr 1fr;gap:.9rem}
+      .footer{padding:2rem 1rem}
+      .footer-right{align-items:flex-start}
+      .evalua-card{flex-direction:column;gap:.5rem}
+      .evalua-num{width:auto;font-size:1.4rem}
+    }
+    @media (max-width:380px){
+      .hero h1{font-size:1.45rem}
+      .section-title{font-size:1.4rem}
+      .stats-grid{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BANNER -->
+  <div class="banner-convocatoria">
+    <span class="banner-pill">Convocatoria nacional abierta</span>
+    <span>Beca del 50% por Día del Estudiante — Solo 40 lugares disponibles</span>
+ 
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <a href="https://www.puntoformativo.com/" class="nav-logo">PUNTO FORMATIVO</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#que-evalua" class="smooth-scroll">Qué evalúa</a></li>
+      <li><a href="#como-funciona" class="smooth-scroll">Cómo funciona</a></li>
+      <li><a href="#testimonios" class="smooth-scroll">Testimonios</a></li>
+      <li><a href="#faq" class="smooth-scroll">Preguntas</a></li>
+    </ul>
+    <div>
+      <a href="#contacto" class="btn-primary smooth-scroll">Quiero mi beca 50%</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero-circle" aria-hidden="true"></div>
+    <div class="hero-circle-2" aria-hidden="true"></div>
+    <div class="hero-left">
+      <span class="eyebrow">Oportunidad única</span>
+      <h1>¡Certifica tu inglés ante la SEP y <em>obtén mejores oportunidades laborales!</em></h1>
+      <p class="hero-desc">
+        Los candidatos con <strong>inglés laboral certificado</strong> llegan a las entrevistas con <strong>ventaja real</strong>. No es una línea más en tu CV, es una <strong>certificación oficial emitida por el Gobierno de México</strong> que las mejores empresas están buscando.
+      </p>
+      <div class="hero-microcopy">
+        <div class="hero-mc-item"><div class="hero-mc-icon">✓</div><span>Proceso 100% guiado</span></div>
+        <div class="hero-mc-item"><div class="hero-mc-icon">✓</div><span>Válido en todo México</span></div>
+        <div class="hero-mc-item"><div class="hero-mc-icon">✓</div><span>Totalmente Online</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <a href="#contacto" class="btn-hero-claim smooth-scroll">
+        <span class="btn-hero-claim__top">Obtén tu beca del</span>
+        <span class="btn-hero-claim__big">50%</span>
+        <span class="btn-hero-claim__sub">¡Solicítala ahora!</span>
+      </a>
+      <div class="hero-right-note">*Sujeta a validación de perfil y disponibilidad</div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-num">+500</div>
+          <div class="stat-label">Estudiantes acompañados en su desarrollo profesional</div>
+        </div>
+        <div>
+          <div class="stat-num">SEP + CONOCER</div>
+          <div class="stat-label">Certificación con respaldo oficial del Gobierno de México</div>
+        </div>
+        <div>
+          <div class="stat-num">Nacional</div>
+          <div class="stat-label">Convocatoria abierta desde cualquier parte de México</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Alineación y Evaluación en línea</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN -->
+  <section class="pain-section" id="por-que">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="eyebrow">La realidad del mercado laboral en México</span>
+        <h2 class="section-title">Cada año egresan casi 1 millón de universitarios en México<br><em>¿Cómo vas a destacar entre ellos?</em></h2><br>
+        <p class="section-desc" style="margin:0 auto;">
+          El inglés lo pone cualquiera en su CV, pero <strong>comprobarlo es otra historia.</strong><br><br
+
+          Datos publicados por el <strong>Observatorio Laboral del Gobierno de México</strong> indican que <strong>más del 30% de las ofertas de trabajo exigen inglés,</strong> especialmente las de <strong>mejor salario.</strong>¹<br><br>
+
+          El <strong>CONOCER</strong> reporta que los trabajadores <strong>con certificaciones oficiales ganan en promedio el doble</strong> que quienes no tienen respaldo formal.²<br><br>
+
+          Si tú fueras el reclutador, ¿a quién llamarías primero: al que escribe <strong>"sé inglés"</strong> o al que trae un certificado con <strong>sello de la SEP</strong>?
+          <strong class="section-desc-callout"><br><br>Un certificado es la evidencia que te coloca en otro nivel.</strong>
+        </p>
+      </div>
+
+      <div class="pain-grid">
+        <div>
+          <p class="pain-col-title red">❌ Sin respaldo formal</p>
+          <ul class="pain-list">
+            <li><div class="pain-icon-bad">✕</div><span>Mandas cientos de CVs y el silencio es la única respuesta</span></li>
+            <li><div class="pain-icon-bad">✕</div><span>Pones "sé inglés" en tu CV, pero sin certificación nadie lo puede verificar</span></li>
+            <li><div class="pain-icon-bad">✕</div><span>Tal vez tienes el nivel, pero sin evidencia el reclutador simplemente pasa</span></li>
+            <li><div class="pain-icon-bad">✕</div><span>Tu perfil de inglés se ve igual al de todos los demás egresados</span></li>
+            <li><div class="pain-icon-bad">✕</div><span>Años aprendiendo inglés que no se traducen en ninguna ventaja real</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="pain-col-title green">✓ Con la certificación EC0679</p>
+          <ul class="pain-list">
+            <li><div class="pain-icon-good">✓</div><span>Tu perfil destaca desde que el reclutador abre tu CV</span></li>
+            <li><div class="pain-icon-good">✓</div><span>Tu inglés tiene validez oficial ante la SEP y CONOCER, verificable en línea</span></li>
+            <li><div class="pain-icon-good">✓</div><span>Llegas a la entrevista con una certificación de inglés laboral en la mano</span></li>
+            <li><div class="pain-icon-good">✓</div><span>Tu certificación de inglés te separa del 90% que solo lo declara</span></li>
+            <li><div class="pain-icon-good">✓</div><span>Tu nombre y certificado quedan registrados en la base de datos nacional del CONOCER</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pain-highlight">
+        <p>Una empresa no evalúa solo lo que dices que sabes. Evalúa <strong>qué tan sólido se ve tu perfil</strong> frente a otros candidatos. Y ahí es donde muchos se quedan cortos.</p>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="#contacto" class="btn-primary large smooth-scroll">Reservar mi beca ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN ES -->
+<section class="props-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="eyebrow">¿Para quien es esta oportunidad única?</span>
+      <h2 class="section-title">Si ya estudiaste inglés, valídalo con una certificación oficial y sepárate de la competencia.</h2>
+      <p class="section-desc" style="margin:0 auto;">Esta beca para certificar inglés laboral, es para ti si te identificas con alguna de estas situaciones:</p>
+    </div>
+
+    <div class="props-grid">
+      <div class="prop-card">
+        <div class="prop-icon">📄</div>
+        <h3>Llevas años estudiando inglés, pero no tienes nada que lo pruebe
+        </h3>
+        <p>Ya tienes el nivel. Ya tienes el nivel. Lo que te falta es el papel oficial que lo convierte en una ventaja real.</p>
+      </div>
+      <div class="prop-card">
+        <div class="prop-icon">🎯</div>
+        <h3>Estás buscando trabajo y tu CV no tiene nada de especial
+        </h3>
+        <p>Sin respaldo formal, tu perfil es uno más. La certificación EC0679 es lo que hace que el reclutador se detenga en el tuyo.</p>
+      </div>
+      <div class="prop-card">
+        <div class="prop-icon">🎓</div>
+        <h3>Recién egresado, poca experiencia y mucha competencia</h3>
+        <p>Sin trayectoria larga que mostrar, cada credencial oficial cuenta el doble. Una certificación avalada por el Gobierno de México puede ser la diferencia para conseguir una entrevista</p>
+      </div>
+      <div class="prop-card">
+        <div class="prop-icon">💼</div>
+        <h3>Quieres que cualquier empresa en México pueda verificar tu inglés en un catálogo oficial </h3>
+        <p>Al certificarte tu nombre queda registrado en el RENAP, el Registro Nacional de Personas Certificadas del CONOCER. Permanente, asociado a tu CURP y avalado por la SEP.</p>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="#contacto" class="btn-primary large smooth-scroll">me siento así  ¿Dónde me registro?</a>
+  </div>
+</section>
+
+  <!-- QUÉ EVALÚA — Layout D -->
+  <section class="proceso-section" id="que-evalua" style="background:#F4F7F9;">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="eyebrow">Estándar de Competencia Laboral · EC0679</span>
+        <h2 class="section-title">¿Qué evalúa la certificación EC0679?</h2>
+        <p class="section-desc" style="margin:0 auto;">El estándar  de Comptencia laboral <strong> - EC0679 - Uso de la Lengua Inglesa en un Contexto Laboral</strong>, mide cuatro competencias en situaciones reales de trabajo, no ejercicios académicos.</p>
+      </div>
+      <div class="evalua-list">
+        <div class="evalua-card">
+          <div class="evalua-num">01</div>
+          <div class="evalua-body">
+            <h3>Comprensión auditiva</h3>
+            <p>Capacidad de entender instrucciones, procesos y conversaciones en inglés dentro de un entorno laboral como en una junta de trabajo.</p>
+          </div>
+        </div>
+        <div class="evalua-card">
+          <div class="evalua-num">02</div>
+          <div class="evalua-body">
+            <h3>Expresión oral</h3>
+            <p>Habilidad para comunicarse verbalmente en inglés, como hacer recomendaciones sobre un producto o servicio.</p>
+          </div>
+        </div>
+        <div class="evalua-card">
+          <div class="evalua-num">03</div>
+          <div class="evalua-body">
+            <h3>Expresión escrita</h3>
+            <p>Capacidad de redactar en inglés: responder correos, completar tareas escritas y comunicarse por escrito en un contexto profesional.</p>
+          </div>
+        </div>
+        <div class="evalua-card">
+          <div class="evalua-num">04</div>
+          <div class="evalua-body">
+            <h3>Comprensión de lectura</h3>
+            <p>Habilidad para identificar y procesar información en textos laborales escritos en inglés como manuales, instrucciones o comunicados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="#contacto" class="btn-primary large smooth-scroll">Lo tengo controlado, quiero certificarme</a>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA — Layout C -->
+  <section class="proceso-section" id="como-funciona">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="eyebrow">¿Cómo me certifico?</span>
+        <h2 class="section-title">4 pasos para obtener tu certificación oficial de inglés laboral con beca</h2>
+        <p class="section-desc" style="margin:0 auto;">Solo para perfiles seleccionados. Al validar tu perfil y obtener tu beca, te acompañamos en cada paso hasta que tengas tu certificado oficial en mano.</p>
+      </div>
+      <div class="proceso-media">
+        <div class="proceso-media-image">
+          <img
+            src="https://drive.google.com/file/d/1CS2WE1BkJud-ghpLsFjC-8EIMrztIh1_/view?usp=sharing"
+            alt="Imagen del proceso de certificación"
+          />
+          <span class="proceso-media-label">Imagen (placeholder)</span>
+        </div>
+        <div class="proceso-vertical">
+        <div class="proceso-v-item">
+          <div class="proceso-v-left">
+            <div class="proceso-v-num">01</div>
+            <div class="proceso-v-line"></div>
+          </div>
+          <div class="proceso-v-body">
+            <h3>Regístrate y conéctate a tu diagnóstico
+            </h3>
+            <p>Completa el formulario y mantente al pendiente, te llamamos para agendar 20 minutos. Ahí validamos tu perfil y, si calificas, apartas tu lugar</p>
+          </div>
+        </div>
+        <div class="proceso-v-item">
+          <div class="proceso-v-left">
+            <div class="proceso-v-num">02</div>
+            <div class="proceso-v-line"></div>
+          </div>
+          <div class="proceso-v-body">
+            <h3>Accedes a nuestra comunidad online y empiezas a prepararte
+            </h3>
+            <p>Te damos acceso a un breve curso de alineación donde te explicamos cómo funciona la evaluación y qué esperar en cada competencia. Además encuentras guias de estudio, simulaciones y asesorías para que llegues con toda seguridad a tu evaluación.</p>
+          </div>
+        </div>
+        <div class="proceso-v-item">
+          <div class="proceso-v-left">
+            <div class="proceso-v-num">03</div>
+            <div class="proceso-v-line"></div>
+          </div>
+          <div class="proceso-v-body">
+            <h3>Plan de evaluación, evidencias y juicio
+            </h3>
+            <p>Al tener todo listo, iniciamos el protocolo oficial: registro en el sistema del CONOCER y plan de evaluación. La recopilación de evidencias y el juicio de competencia se realizan en una sesión en línea de aproximadamente 2 horas y media. </p>
+          </div>
+        </div>
+            <div class="proceso-v-item">
+          <div class="proceso-v-left">
+            <div class="proceso-v-num">04</div>
+                </div>
+          <div class="proceso-v-body">
+            <h3> Emisión de tu certificado oficial y registro en el RENAP
+            </h3>
+            <p>En caso de obtener juicio de competente, se emite tu certificado oficial EC0679 con fotografía, folio y validez ante la SEP y CONOCER. Tu nombre queda registrado en el Registro Nacional de Personas Certificadas (RENAP), verificable por cualquier empresa en México a través de tu CURP.</p>
+          </div>          
+        </div>
+      </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="#contacto" class="btn-primary large smooth-scroll">¿En dónde me registro?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios-section" id="testimonios">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="eyebrow">Perfiles reales</span>
+        <h2 class="section-title">Perfiles que ya entendieron que no basta con decirlo</h2>
+        <p class="section-desc" style="margin:0 auto;">Hay que respaldarlo.</p>
+      </div>
+      <div class="testimonios-grid">
+        <article class="testimonio-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="quote-title">"Mi perfil se veía mucho más serio en entrevistas"</div>
+            <p class="quote-body">"Yo ya ponía inglés en mi currículum, pero no tenía una forma clara de respaldarlo. Después del proceso, sentí que mi perfil estaba mejor armado y me dio más seguridad al momento de postularme."</p>
+          </div>
+          <div class="author-info">
+            <span class="author-name">[Nombre]</span>
+            <span class="author-tag">EC0679 · Inglés en contexto laboral</span>
+          </div>
+        </article>
+        <article class="testimonio-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="quote-title">"Dejé de sentir que mi inglés estaba 'en el aire'"</div>
+            <p class="quote-body">"Ya había estudiado inglés antes, pero me faltaba algo que lo aterrizara al mundo laboral. Esta certificación me ayudó a verlo como una competencia profesional y no solo como algo que ponía en el CV."</p>
+          </div>
+          <div class="author-info">
+            <span class="author-name">[Nombre]</span>
+            <span class="author-tag">EC0679 · Inglés en contexto laboral</span>
+          </div>
+        </article>
+        <article class="testimonio-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="quote-title">"Me ayudó a darle más peso a mi perfil como recién egresado"</div>
+            <p class="quote-body">"Cuando vas empezando, cualquier respaldo serio suma. Para mí fue una forma de fortalecer mi perfil y dejar de competir solo con lo básico."</p>
+          </div>
+          <div class="author-info">
+            <span class="author-name">[Nombre]</span>
+            <span class="author-tag">EC0679 · Inglés en contexto laboral</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-wrap">
+        <div style="text-align:center;">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 class="section-title">Resuelve las dudas antes de decidir</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <details>
+              <summary>¿Necesito tener un nivel avanzado de inglés?<span class="faq-icon">+</span></summary>
+              <div class="faq-body">No necesariamente. Esta convocatoria está pensada para personas que ya tienen bases de inglés y quieren respaldarlas de forma más seria en un contexto laboral.</div>
+            </details>
+          </div>
+          <div class="faq-item">
+            <details>
+              <summary>¿Esto es un curso o una certificación?<span class="faq-icon">+</span></summary>
+              <div class="faq-body">La propuesta gira alrededor de la <strong>certificación EC0679 de Inglés Laboral</strong>, vinculada a un estándar avalado por <strong>SEP y CONOCER</strong>. No es simplemente un curso con constancia genérica.</div>
+            </details>
+          </div>
+          <div class="faq-item">
+            <details>
+              <summary>¿La beca del 50% aplica para todos?<span class="faq-icon">+</span></summary>
+              <div class="faq-body">No. La beca está sujeta a validación de perfil y a disponibilidad de lugares dentro de la convocatoria. Por eso lo primero es registrar tu perfil para revisar si aplicas.</div>
+            </details>
+          </div>
+          <div class="faq-item">
+            <details>
+              <summary>¿Si ya puse inglés en mi currículum, esto todavía me sirve?<span class="faq-icon">+</span></summary>
+              <div class="faq-body">Sí, porque una cosa es declararlo y otra es respaldarlo con una credencial que fortalezca tu perfil profesional con validez oficial ante la SEP.</div>
+            </details>
+          </div>
+          <div class="faq-item">
+            <details>
+              <summary>¿La convocatoria es solo para una ciudad?<span class="faq-icon">+</span></summary>
+              <div class="faq-body">No. Es una <strong>convocatoria nacional</strong>. Puedes participar desde cualquier parte de México en modalidad en línea.</div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSER -->
+  <section class="closer-section" id="contacto">
+    <div class="container">
+      <h2 class="section-title">Tu inglés puede seguir siendo una línea más en tu currículum... o puede convertirse en una ventaja profesional más clara</h2>
+      <div class="closer-bullets">
+        <div class="closer-bullet"><div class="closer-check">✓</div><span>Porque la convocatoria con beca tiene lugares limitados</span></div>
+        <div class="closer-bullet"><div class="closer-check">✓</div><span>Porque tu perfil puede fortalecerse más cuando tu inglés sí se puede respaldar</span></div>
+        <div class="closer-bullet"><div class="closer-check">✓</div><span>Porque entre más pronto lo revises, más claro tendrás si esta oportunidad es para ti</span></div>
+        <div class="closer-bullet"><div class="closer-check">✓</div><span>Porque si ya invertiste tiempo en aprender inglés, vale la pena hacerlo más útil para tu carrera</span></div>
+        <div class="closer-bullet"><div class="closer-check">✓</div><span>Porque competir con respaldo siempre pesa más que competir solo con intención</span></div>
+      </div>
+      <div style="margin-top:1.75rem;text-align:center;">
+        <div class="eyebrow">Beca del 50% por Día del Estudiante</div>
+        <h3 style="margin:.35rem 0 0;font-family:'Lexend',sans-serif;color:#ffffff;">Registra tu perfil para solicitar tu beca</h3>
+        <p style="margin:.6rem auto 0;max-width:56ch;opacity:.9;color:#ffffff;">Completa el formulario y revisamos si tu perfil aplica. LUGARES LIMITADOS.</p>
+      </div>
+
+      <!-- AQUÍ VA TU IFRAME / FORMULARIO -->
+
+      <div class="closer-microcopy">
+        <span>✓ Proceso de registro simple</span>
+        <span>✓ Revisión de perfil sin compromiso</span>
+        <span>✓ Beca del 50% sujeta a disponibilidad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUENTES -->
+  <div class="fuentes-section" aria-label="Fuentes">
+    <div class="container">
+      <div class="fuentes">
+        <p>Fuentes</p>
+        <p>¹ Observatorio Laboral, STPS — <a href="https://www.observatoriolaboral.gob.mx/static/preparate-empleo/Articulo_nivel_ingles.html" target="_blank" rel="noopener">Tres de cada diez ofertas de empleo requieren un buen nivel de inglés</a></p>
+        <p>² CONOCER — <a href="https://conocer.gob.mx/wp-content/uploads/2025/08/Estudio-de-la-importancia-e-impacto-de-la-certificacion-de-competencias-laborales-1.pdf" target="_blank" rel="noopener">Estudio de la importancia e impacto de la certificación de competencias laborales (2022)</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="name">Punto Formativo</p>
+        <p class="sub">
+          Centro de Evaluación y Certificación CONOCER-SEP · CE1842-OC063-18<br>
+          Querétaro, México · EC0679 · EC0217 · EC0301 · EC0366 · EC0076 · EC0647<br>
+          ICEMexico · Red CONOCER-SEP · Planes de capacitación para empresas
+        </p>
+      </div>
+      <div class="footer-right">
+        <p>© 2026 Punto Formativo. Todos los derechos reservados.</p>
+        <a href="/aviso-de-privacidad">Aviso de privacidad</a>
+        <div class="footer-links">
+          <a href="https://puntoformativo.com/ec0679">EC0679</a>
+          <a href="https://puntoformativo.com/ec0217">EC0217</a>
+          <a href="https://puntoformativo.com/ec0076">EC0076</a>
+          <a href="https://puntoformativo.com/ec0301">EC0301</a>
+          <a href="https://puntoformativo.com/ec0366">EC0366</a>
+          <a href="https://puntoformativo.com/ec0647">EC0647</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var nav = document.getElementById('navbar');
+      var toggle = document.getElementById('navToggle');
+      var menu = document.getElementById('navMenu');
+      if(toggle && nav && menu){
+        toggle.addEventListener('click',function(){
+          var open = !nav.classList.contains('open');
+          nav.classList.toggle('open',open);
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        });
+        menu.querySelectorAll('a').forEach(function(link){
+          link.addEventListener('click',function(){
+            nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded','false');
+            toggle.setAttribute('aria-label','Abrir menú');
+          });
+        });
+      }
+      document.querySelectorAll('a.smooth-scroll[href^="#"]').forEach(function(anchor){
+        anchor.addEventListener('click',function(e){
+          var target = document.querySelector(this.getAttribute('href'));
+          if(target){
+            e.preventDefault();
+            target.scrollIntoView({behavior:'smooth',block:'start'});
+            history.pushState(null,'',this.getAttribute('href'));
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
