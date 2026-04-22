@@ -290,69 +290,49 @@
       display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;
     }
     .precio-card{
-      background:rgba(230, 169, 169, 0.07);
-      border:1.5px solid rgba(255,255,255,.15);
+      background:#ffffff !important;
+      border:1.5px solid #e5e7eb;
       border-radius:1.5rem;
       padding:2rem 1.75rem;
       text-align:center;
       transition:.25s ease;
     }
-    .precio-card:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}
-    .precio-card.destacado{
-      background:#ffffff !important;
-      border-color:#ffffff;
-      position:relative;
-    }
-    .precio-card.destacado *{color:#002B49 !important}
-    .destacado-label{
-      position:absolute;top:-14px;left:50%;transform:translateX(-50%);
-      background:#facc15 !important;color:#002B49;
-      font-size:.65rem;font-weight:800;text-transform:uppercase;
-      padding:5px 14px;border-radius:999px;white-space:nowrap;
-      letter-spacing:.06em;
-    }
+    .precio-card:hover{border-color:#002B49;box-shadow:0 8px 24px rgba(0,43,73,.1)}
     .precio-modalidad{
       font-size:.92rem;font-weight:700;text-transform:uppercase;
-      letter-spacing:.1em;color:rgba(255,255,255,.6);margin-bottom:.75rem;
+      letter-spacing:.1em;color:#4b5563;margin-bottom:.75rem;
     }
-    .precio-card.destacado .precio-modalidad{color:#4b5563 !important}
     .precio-monto{
-  font-family:'Lexend',sans-serif;
-  font-size:2.4rem;
-  font-weight:800;
-  color:#00f07c;
-  line-height:1.1;
-  margin-bottom:.3rem;
-}
-
-.precio-anterior{
-  display:block;
-  font-size:1rem;
-  font-weight:700;
-  text-decoration:line-through;
-  opacity:.5;
-  margin-bottom:.2rem;
-}
-
-.precio-promocion{
-  display:block;
-  font-size:2.4rem;
-  font-weight:800;
-}
-    .precio-card.destacado .precio-monto{color:#002B49 !important}
-    .precio-nota{font-size:.98rem;color:rgba(255,255,255,.6);margin-bottom:1.25rem}
-    .precio-card.destacado .precio-nota{color:#4b5563 !important}
+      font-family:'Lexend',sans-serif;
+      font-size:2.4rem;
+      font-weight:800;
+      color:#002B49;
+      line-height:1.1;
+      margin-bottom:.3rem;
+    }
+    .precio-anterior{
+      display:block;
+      font-size:1rem;
+      font-weight:700;
+      text-decoration:line-through;
+      opacity:.45;
+      margin-bottom:.2rem;
+    }
+    .precio-promocion{
+      display:block;
+      font-size:2.4rem;
+      font-weight:800;
+    }
+    .precio-nota{font-size:.98rem;color:#4b5563;margin-bottom:1.25rem}
     .precio-lista{
       list-style:none;text-align:left;display:flex;
       flex-direction:column;gap:.5rem;margin-bottom:1.5rem;
     }
     .precio-lista li{
       display:flex;align-items:flex-start;gap:.5rem;
-      font-size:.92rem;color:rgba(255,255,255,.8);line-height:1.5;
+      font-size:.92rem;color:#4b5563;line-height:1.5;
     }
-    .precio-card.destacado .precio-lista li{color:#4b5563 !important}
-    .precio-lista li::before{content:'✓';color:#00f07c;font-weight:700;flex-shrink:0}
-    .precio-card.destacado .precio-lista li::before{color:#002B49 !important}
+    .precio-lista li::before{content:'✓';color:#002B49;font-weight:700;flex-shrink:0}
 
     /* ══════════════════════════════════════
        PROCESO PASO A PASO (roadmap)
@@ -500,6 +480,7 @@
        RESPONSIVE — MOBILE (640px)
     ══════════════════════════════════════ */
     @media(max-width:640px){
+      .precio-card-capacitacion{grid-template-columns:1fr!important}
       .nav{padding:.85rem 1rem;flex-wrap:wrap}
       .nav-toggle{display:flex}
       .nav-links{
@@ -600,7 +581,7 @@
 
     <div class="hero-panel">
       <img
-        src="https://images.unsplash.com/photo-1558204458-fcd9d63b9662?q=80&w=1423&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://raw.githubusercontent.com/sermercader/punto-formativo/1ae77c85f989870c62926d3f8fb518bf39b1291a/Certificado.png"
         alt="Persona certificando su inglés laboral"
         loading="lazy"
       />
@@ -725,7 +706,7 @@
 
   <div class="precio-card">
     <div class="precio-modalidad">Evaluación directa</div>
-    <div class="precio-monto">$2,000 MXN</div>
+    <div class="precio-monto">$3,500 MXN</div>
     <div class="precio-nota">Para quienes ya cuentan con buen dominio del inglés laboral y buscan avanzar directo al proceso de evaluación.</div>
     <ul class="precio-lista">
       <li>1 semana para agendar</li>
@@ -738,11 +719,10 @@
   </div>
 
   <div class="precio-card destacado">
-    <span class="destacado-label">Promoción especial</span>
     <div class="precio-modalidad">Curso de alineación + evaluación</div>
     <div class="precio-monto">
-      <span class="precio-anterior">$8,000 MXN</span>
-      <span class="precio-promocion">$4,000 MXN</span>
+      <span class="precio-anterior">$6,000 MXN</span>
+      <span class="precio-promocion">$5,000 MXN</span>
     </div>
     <div class="precio-nota"> Ideal si quieres prepararte mejor antes de presentar tu evaluación.</div>
     <ul class="precio-lista">
@@ -755,6 +735,24 @@
   </div>
 </div>
 
+  <div style="margin-top:1.5rem;">
+    <div class="precio-card precio-card-capacitacion" style="max-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:center;text-align:left;">
+      <div>
+        <div class="precio-modalidad">¿Te interesa pero aún no dominas el inglés?</div>
+        <div class="precio-monto" style="font-size:1.5rem;margin-bottom:.5rem;">Cursos de capacitación</div>
+        <div class="precio-nota">También ofrecemos cursos para desarrollar las competencias del estándar desde cero, antes de que estés listo para evaluarte.</div>
+      </div>
+      <div>
+        <ul class="precio-lista" style="margin-bottom:1.25rem;">
+          <li>Modalidad online y presencial</li>
+          <li>Descuento especial para grupos</li>
+          <li>Contenido alineado al EC0679</li>
+          <li>Acompañamiento durante todo el proceso</li>
+        </ul>
+        <a href="https://wa.me/524423335393?text=Hola,%20me%20interesan%20los%20cursos%20de%20capacitaci%C3%B3n%20de%20ingl%C3%A9s%20EC0679" target="_blank" class="btn-primary" style="width:100%;text-align:center;">Quiero saber más</a>
+      </div>
+    </div>
+  </div>
 
       </div>
       <p style="text-align:center;font-size:1.0rem;color:rgb(255, 255, 255);margin-top:2rem;">Al obtener el juicio de competente se deberá realizar el pago por la emisión de certificado con un costo de $1000</p>
