@@ -474,6 +474,16 @@
     /* ══════════════════════════════════════
        RESPONSIVE — TABLET (960px)
     ══════════════════════════════════════ */
+    .temario-descarga{text-align:center;margin-top:2.25rem}
+    .temario-descarga-link{
+      display:inline-flex;align-items:center;gap:.6rem;
+      font-family:'Lexend',sans-serif;font-size:1rem;font-weight:700;
+      color:#002B49;background:none;
+      border:none;border-bottom:3px solid #facc15;
+      padding-bottom:3px;cursor:pointer;transition:.2s ease;
+    }
+    .temario-descarga-link:hover{color:#028b02;border-color:#00f07c}
+
     @media(max-width:960px){
       .hero-estandar{grid-template-columns:1fr;padding:3rem 1.5rem}
       .hero-panel{display:none} /* panel se mueve a sección precio */
@@ -688,6 +698,14 @@
         </article>
 
       </div>
+
+      <div class="temario-descarga">
+        <a class="temario-descarga-link" href="https://conocer.gob.mx/contenido/publicaciones_dof/EC0679.pdf" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+          Ver Estándar EC0679 — Uso de la lengua inglesa en un contexto laboral
+        </a>
+      </div>
+
     </div>
   </section>
 
