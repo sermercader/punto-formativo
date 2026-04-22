@@ -225,7 +225,7 @@
     /* ══════════════════════════════════════
        PARA QUIÉN ES
     ══════════════════════════════════════ */
-    .para-quien{background:#ffffff !important}
+    .para-quien{background:#F4F7F9 !important}
     .perfiles-grid{
       display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem;
     }
@@ -249,7 +249,7 @@
     /* ══════════════════════════════════════
        TEMARIO / QUÉ SE EVALÚA
     ══════════════════════════════════════ */
-    .temario{background:#F4F7F9 !important}
+    .temario{background:#ffffff !important}
     .temario-grid{
       display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:2.5rem;
     }
@@ -322,6 +322,14 @@
       display:block;
       font-size:2.4rem;
       font-weight:800;
+    }
+    .precio-card.destacado{position:relative}
+    .destacado-label{
+      position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+      background:#facc15 !important;color:#002B49;
+      font-size:.65rem;font-weight:800;text-transform:uppercase;
+      padding:5px 14px;border-radius:999px;white-space:nowrap;
+      letter-spacing:.06em;
     }
     .precio-nota{font-size:.98rem;color:#4b5563;margin-bottom:1.25rem}
     .precio-lista{
@@ -419,7 +427,7 @@
     /* ══════════════════════════════════════
        CTA FINAL
     ══════════════════════════════════════ */
-    .final-cta{background:#fefefe !important;text-align:center;padding:4rem 0}
+    .final-cta{background:#F4F7F9 !important;text-align:center;padding:4rem 0}
     .final-cta .section-title{color:#002B49}
     .final-cta .section-desc{color:#002B49;opacity:.82;margin:0 auto}
     .final-cta-meta{
@@ -719,6 +727,7 @@
   </div>
 
   <div class="precio-card destacado">
+    <span class="destacado-label">Promoción Recomendada</span>
     <div class="precio-modalidad">Curso de alineación + evaluación</div>
     <div class="precio-monto">
       <span class="precio-anterior">$6,000 MXN</span>
