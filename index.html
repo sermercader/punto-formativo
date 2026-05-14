@@ -11,10 +11,26 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&family=Montserrat:wght@400;600;700&display=fallback" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&family=Montserrat:wght@400;600;700&display=fallback" rel="stylesheet"></noscript>
 
   <style>
+    @font-face{
+      font-family:'Lexend Fallback';
+      src:local('Arial');
+      ascent-override:96.15%;
+      descent-override:25.65%;
+      line-gap-override:0%;
+      size-adjust:102.85%;
+    }
+    @font-face{
+      font-family:'Montserrat Fallback';
+      src:local('Arial');
+      ascent-override:85.08%;
+      descent-override:21.27%;
+      line-gap-override:0%;
+      size-adjust:112.83%;
+    }
     :root{
       --azul:#002B49;
       --azul-2:#0b3b61;
@@ -37,12 +53,12 @@
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{
-      font-family:'Montserrat',sans-serif;
+      font-family:'Montserrat','Montserrat Fallback',sans-serif;
       background:#F4F7F9 !important;
       color:#002B49;
       overflow-x:hidden;
     }
-    h1,h2,h3,h4,.lexend{font-family:'Lexend',sans-serif}
+    h1,h2,h3,h4,.lexend{font-family:'Lexend','Lexend Fallback',sans-serif}
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
     .container{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
@@ -132,7 +148,7 @@
       border-bottom:4px solid #002B49;
     }
     .nav-logo{
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-weight:800;
       font-size:.95rem;
       white-space:nowrap;
@@ -277,7 +293,7 @@
       text-align:center;
     }
     .stat-num{
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-size:clamp(1.4rem,3vw,2.2rem);
       color:#ffffff;
       font-weight:800;
@@ -315,7 +331,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-size:1rem;
       font-weight:800;
     }
@@ -365,7 +381,7 @@
       margin-bottom:.75rem;
     }
     .cert-code{
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-size:1.4rem;
       font-weight:700;
       margin-bottom:.2rem;
@@ -425,7 +441,7 @@
       align-items:center;
       justify-content:center;
       z-index:2;
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-weight:800;
       color:#002B49;
       font-size:1.1rem;
@@ -533,7 +549,7 @@
       padding:1.75rem 2rem;
     }
     .b2b-quote blockquote{
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-size:1.1rem;
       font-style:italic;
       line-height:1.65;
@@ -602,7 +618,7 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-weight:700;
       font-size:.95rem;
       color:#002B49;
@@ -660,7 +676,7 @@
       flex-wrap:wrap;
     }
     .footer-brand .name{
-      font-family:'Lexend',sans-serif;
+      font-family:'Lexend','Lexend Fallback',sans-serif;
       font-weight:800;
       font-size:1rem;
       margin-bottom:.5rem;
