@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargando ficha...</title>
+  <script>
+    window.onload = function () {
+      var a = document.createElement('a');
+      a.href = 'Ficha Estandar EC0647.pdf';
+      a.download = 'Ficha Estandar EC0647.pdf';
+      document.body.appendChild(a);
+      a.click();
+    };
+  </script>
+</head>
+<body>
+  <p style="font-family:sans-serif;text-align:center;margin-top:80px;">
+    La descarga comenzará en un momento...<br>
+    <a href="Ficha Estandar EC0647.pdf" download style="color:#555;">Haz clic aquí si no inicia.</a>
+  </p>
+</body>
+</html>
