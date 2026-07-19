@@ -36,8 +36,21 @@ include __DIR__ . '/../includes/head.php';
   <section class="diag-embed-section pf-fullwidth" id="diagnostico">
     <div class="container">
       <div class="diag-embed-wrap">
-        <iframe src="https://api.leadconnectorhq.com/widget/quiz/C0d0E3fxImP7XZ02kKvW" style="border:none;width:100%;" scrolling="no" id="C0d0E3fxImP7XZ02kKvW" title="Diagnóstico EC0679"></iframe>
+        <iframe data-src="https://api.leadconnectorhq.com/widget/quiz/C0d0E3fxImP7XZ02kKvW" style="border:none;width:100%;" scrolling="no" id="C0d0E3fxImP7XZ02kKvW" title="Diagnóstico EC0679"></iframe>
       </div>
+      <script>
+        const ifr = document.getElementById('C0d0E3fxImP7XZ02kKvW');
+        if (ifr) {
+          const src = new URL(ifr.dataset.src);
+          const params = new URLSearchParams(location.search);
+          const permitidos = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid'];
+          permitidos.forEach((k) => {
+            const v = params.get(k);
+            if (v) src.searchParams.set(k, v);
+          });
+          ifr.src = src.toString();
+        }
+      </script>
       <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </div>
   </section>
