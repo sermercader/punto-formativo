@@ -1,0 +1,208 @@
+/* ══════════════════════════════════════
+   EC0679 · Diagnóstico
+   Comparte paleta con ec0679.css
+══════════════════════════════════════ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  font-family:'Montserrat',sans-serif;
+  background:#F4F7F9 !important;
+  color:#002B49;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Lexend',sans-serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+
+.pf-fullwidth{
+  width:100vw !important;
+  max-width:100vw !important;
+  position:relative !important;
+  left:50% !important;
+  right:auto !important;
+  transform:translateX(-50%) !important;
+  box-sizing:border-box !important;
+}
+
+.eyebrow{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#050505;
+  background:#e7d405 !important;
+  padding:6px 12px;
+  border-radius:999px;
+  margin-bottom:1rem;
+}
+.section-title{
+  font-size:clamp(1.5rem,4vw,2.6rem);
+  line-height:1.15;
+  font-weight:800;
+  margin-bottom:.75rem;
+  color:#002B49;
+}
+.section-desc{
+  max-width:680px;
+  color:#4b5563;
+  line-height:1.7;
+  font-size:.95rem;
+}
+
+/* ── NAV (igual a ec0679.css) ── */
+.nav{
+  position:sticky;top:0;z-index:1000;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  padding:1rem 1.5rem;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(10px);
+  border-bottom:4px solid #002B49;
+}
+.nav-logo{font-family:'Lexend',sans-serif;font-weight:800;font-size:.95rem;white-space:nowrap;flex-shrink:0}
+.nav-links{
+  display:flex;gap:1.5rem;list-style:none;flex:1;justify-content:center;
+  font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
+}
+.nav-links a:hover{color:#ca8a04}
+.nav-toggle{
+  display:none;width:40px;height:40px;
+  border:2px solid #002B49;border-radius:10px;
+  background:#ffffff !important;cursor:pointer;
+  align-items:center;justify-content:center;flex-shrink:0;
+}
+.nav-toggle span{display:block;width:18px;height:2px;background:#002B49 !important;position:relative}
+.nav-toggle span::before,.nav-toggle span::after{
+  content:"";display:block;width:18px;height:2px;
+  background:#002B49 !important;position:absolute;
+}
+.nav-toggle span::before{top:-6px}
+.nav-toggle span::after{top:6px}
+.nav-cta .btn-primary{padding:9px 16px;font-size:.8rem}
+.btn-primary{
+  display:inline-block;
+  background:#00f07c !important;
+  color:#002B49;
+  font-weight:700;
+  padding:14px 28px;
+  border-radius:999px;
+  box-shadow:4px 4px 0px #002B49;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:.85rem;
+  transition:.25s ease;
+  border:none;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.btn-primary:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0px #002B49}
+
+/* ── HERO DIAGNÓSTICO ── */
+.diag-hero{
+  background:#ffffff !important;
+  padding:3.5rem 1.5rem 1rem;
+  text-align:center;
+  position:relative;
+}
+.diag-hero::before{
+  content:'';
+  position:absolute;width:420px;height:420px;border-radius:50%;
+  background:#e8fff5 !important;top:-160px;right:-100px;z-index:0;
+  pointer-events:none;
+}
+.diag-hero-inner{position:relative;z-index:1;max-width:720px;margin:0 auto}
+.diag-codigo{
+  display:inline-flex;align-items:center;gap:.75rem;
+  background:#002B49 !important;color:#ffffff;
+  padding:8px 16px;border-radius:999px;
+  font-family:'Lexend',sans-serif;font-weight:800;font-size:1rem;
+  margin-bottom:1.25rem;
+}
+.diag-codigo .badge{
+  background:#facc15 !important;color:#002B49;
+  font-size:.65rem;padding:3px 8px;border-radius:999px;
+  font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+}
+.diag-hero h1{
+  font-size:clamp(1.5rem,3.5vw,2.4rem);
+  line-height:1.15;margin-bottom:1rem;letter-spacing:-.02em;
+}
+.diag-hero p{font-size:1rem;line-height:1.7;color:#4b5563;margin:0 auto 1.5rem;}
+.diag-chips{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;
+  color:#4b5563;font-size:.8rem;margin-bottom:.5rem;
+}
+.diag-chips .chip{display:flex;align-items:center;gap:.4rem}
+.diag-chips .dot{
+  width:18px;height:18px;border-radius:50%;
+  background:#00f07c !important;color:#002B49;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.65rem;font-weight:700;flex-shrink:0;
+}
+
+/* ── EMBED DEL QUIZ ── */
+.diag-embed-section{background:#F4F7F9 !important;padding:2.5rem 0 4rem}
+.diag-embed-wrap{
+  max-width:760px;margin:0 auto;
+  background:#ffffff;
+  border:2px solid #002B49;
+  border-radius:1.25rem;
+  box-shadow:4px 4px 0px #002B49;
+  overflow:hidden;
+  padding:.5rem;
+}
+.diag-embed-wrap iframe{
+  display:block;
+  width:100%;
+  border:none;
+  min-height:900px;
+}
+
+/* ── FOOTER (igual a ec0679.css) ── */
+.footer{background:#002B49 !important;color:#ffffff;padding:2.5rem 1.5rem}
+.footer-inner{
+  max-width:1160px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  gap:2rem;flex-wrap:wrap;
+}
+.footer-brand .name{font-family:'Lexend',sans-serif;font-weight:800;font-size:1rem;margin-bottom:.5rem}
+.footer-brand .sub{font-size:.78rem;opacity:.65;line-height:1.75}
+.footer-right{display:flex;flex-direction:column;align-items:flex-end;gap:.5rem}
+.footer-right p,.footer-right a{font-size:.78rem;opacity:.65}
+.footer-right a{text-decoration:underline}
+
+/* ── RESPONSIVE TABLET ── */
+@media(max-width:960px){
+  .footer-inner{flex-direction:column}
+  .footer-right{align-items:flex-start}
+}
+
+/* ── RESPONSIVE MOBILE ── */
+@media(max-width:640px){
+  .nav{padding:.85rem 1rem;flex-wrap:wrap}
+  .nav-toggle{display:flex}
+  .nav-links{
+    display:none;flex-direction:column;width:100%;
+    order:3;padding-top:.75rem;border-top:1px solid #e5e7eb;
+    margin-top:.5rem;gap:0;
+  }
+  .nav-links li{border-bottom:1px solid #f3f4f6}
+  .nav-links a{display:block;padding:.8rem 0;font-size:.8rem}
+  .nav.open .nav-links{display:flex}
+  .nav-cta .btn-primary{padding:9px 16px;font-size:.72rem}
+
+  .diag-hero{padding:2.25rem 1rem 0}
+  .diag-hero h1{font-size:1.5rem}
+  .diag-chips{gap:.5rem}
+
+  .diag-embed-section{padding:1.5rem 0 2.5rem}
+  .diag-embed-wrap{border-radius:1rem;padding:.35rem;margin:0 1rem}
+  .diag-embed-wrap iframe{min-height:760px}
+
+  .footer{padding:2rem 1rem}
+}
+
+@media(max-width:380px){
+  .diag-hero h1{font-size:1.3rem}
+}
